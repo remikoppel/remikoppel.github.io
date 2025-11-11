@@ -361,7 +361,6 @@
             <span>Flexibility</span>
             <span>Creativity</span>
             <span>Leadership</span>
-            <span>Problem Solving &amp; Accountability</span>
             <span>Communication with Stakeholders</span>
             <span>Teamwork &amp; Remote Collaboration</span>
             <span>Agile / SCRUM</span>
@@ -520,7 +519,7 @@
         </div>
 
 
-        </div>
+
         <!-- </div> -->
 
         <!-- </div> -->
@@ -799,7 +798,7 @@
                       Issuer: IELTS / British Council
                     </p>
                     <p class="card-text text-muted mb-1">
-                      Score: 7.5 — Credential ID: 22PL006473KOPR002A
+                      Score: 7.5 Credential ID: 22PL006473KOPR002A
                     </p>
                   </div>
                 </div>
@@ -816,6 +815,7 @@
 
 
 
+      
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <!-- Section Title -->
@@ -831,6 +831,7 @@
 
         <div class="container" data-aos="fade" data-aos-delay="100">
           <div class="row gy-4">
+            <!-- Info Column -->
             <div class="col-lg-4">
               <div
                 class="info-item d-flex"
@@ -838,7 +839,11 @@
                 data-aos-delay="200"
               >
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
-
+                <div>
+                  <h3>Location</h3>
+                  <p>Copenhagen, Denmark</p>
+                </div>
+              </div>
               <!-- End Info Item -->
 
               <div
@@ -867,16 +872,9 @@
               </div>
               <!-- End Info Item -->
             </div>
+            <!-- End Info Column -->
 
-            <div
-              class="info-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <i class="bi bi-person-lines-fill flex-shrink-0"></i>
-
-            </div>
-
+            <!-- Form Column -->
             <div class="col-lg-8">
               <form
                 action="forms/contact.php"
@@ -892,7 +890,7 @@
                       name="name"
                       class="form-control"
                       placeholder="Your Name"
-                      required=""
+                      required
                     />
                   </div>
 
@@ -902,7 +900,7 @@
                       class="form-control"
                       name="email"
                       placeholder="Your Email"
-                      required=""
+                      required
                     />
                   </div>
 
@@ -912,7 +910,7 @@
                       class="form-control"
                       name="subject"
                       placeholder="Subject"
-                      required=""
+                      required
                     />
                   </div>
 
@@ -922,7 +920,7 @@
                       name="message"
                       rows="6"
                       placeholder="Message"
-                      required=""
+                      required
                     ></textarea>
                   </div>
 
@@ -942,8 +940,15 @@
           </div>
         </div>
       </section>
-
       <!-- /Contact Section -->
+
+
+
+
+
+
+
+
     </main>
 
     <footer id="footer" class="footer position-relative light-background">
@@ -1005,5 +1010,17 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const projectsFilter = document.querySelector(
+          '.portfolio-filters [data-filter=".filter-projects"]'
+        );
+        if (projectsFilter) {
+          projectsFilter.click();
+        }
+      });
+    </script>
   </body>
 </html>
+
