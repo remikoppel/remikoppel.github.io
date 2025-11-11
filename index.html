@@ -1012,15 +1012,19 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const projectsFilter = document.querySelector(
-          '.portfolio-filters [data-filter=".filter-projects"]'
-        );
-        if (projectsFilter) {
-          projectsFilter.click();
-        }
+      // Make "Projects" the default visible tab once everything (incl. Isotope) is loaded
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          const projectsFilter = document.querySelector(
+            '.portfolio-filters [data-filter=".filter-projects"]'
+          );
+          if (projectsFilter) {
+            projectsFilter.click();
+          }
+        }, 50); // small delay to be extra safe
       });
     </script>
   </body>
 </html>
+
 
