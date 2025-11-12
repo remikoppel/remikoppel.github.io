@@ -246,7 +246,7 @@
               <div class="stats-item">
                 <span
                   data-purecounter-start="0"
-                  data-purecounter-end="7"
+                  data-purecounter-end="9"
                   data-purecounter-duration="1"
                   class="purecounter"
                 ></span>
@@ -346,6 +346,8 @@
                 <li>Rhino Grasshopper</li>
                 <li>MatLAB</li>
                 <li>Postman</li>
+                <li>ETAP</li>
+                <li>3CAD</li>
               </ul>
             </div>
 
@@ -723,6 +725,41 @@
                 </div>
               </div>
 
+
+
+
+<!-- YOLO Layout Engine for Interior Design -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects"
+              >
+                <div class="card shadow-sm p-3 h-100">
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">
+                      YOLO-Based Layout Engine for Interior Design
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      Full-stack app: GCP backend + Firebase frontend with OAuth SSO. Trains YOLO on annotated room arrangements to auto-align furniture under constraints.
+                    </p>
+                    <p class="text-secondary small mb-3">
+                      <i class="bi bi-calendar-event"></i> 2024 – &amp;SHUFL
+                    </p>
+                    <button
+                      class="btn btn-outline-secondary btn-sm mt-auto"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      onclick="openModal(
+                        'YOLO-Based Layout Engine for Interior Design',
+                        'Built a full-stack web application that assists designers by learning from a dataset of annotated room arrangements. Backend on Google Cloud (Cloud Functions, Cloud Run) exposes RESTful endpoints (Flask, Python) for inference and constraint solving; frontend is hosted on Firebase with company OAuth/SSO authentication. The engine places and aligns cabinets and modules based on room constraints (dimensions, doors, windows, fixed points) while following patterns learned by YOLO from historical arrangements. Included a designer panel for uploading new layouts, triggering retraining, and previewing proposed placements. Tech stack: Python (Flask), YOLO, GCP (Cloud Functions/Run, Secret Manager), Firebase Hosting & Auth, JavaScript UI.'
+                      )"
+                    >
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+
               <!-- Waste Optimization Platform Backend -->
               <div
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects"
@@ -853,7 +890,36 @@
               </div>
 
 
-
+              <!-- AUB Campus Energy Panel (BMS & ETAP) -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects"
+              >
+                <div class="card shadow-sm p-3 h-100">
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">
+                      AUB Campus Energy Panel (BMS &amp; ETAP)
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      Analysis panel for campus power consumption to derive generator
+                      saving patterns using BMS data and ETAP studies.
+                    </p>
+                    <p class="text-secondary small mb-3">
+                      <i class="bi bi-calendar-event"></i> 2021 – American University of Beirut
+                    </p>
+                    <button
+                      class="btn btn-outline-secondary btn-sm mt-auto"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      onclick="openModal(
+                        'AUB Campus Energy Panel (BMS & ETAP)',
+                        'Developed a calculation and visualisation panel to assess campus electrical demand profiles and propose generator energy-saving strategies. Aggregated Building Management System (BMS) telemetry (loads, schedules) and leveraged ETAP simulations to evaluate scenarios, peak-shaving opportunities and optimal generator dispatch. Delivered dashboards and reporting to facilities engineers to reduce fuel consumption and improve availability. Responsibilities included data ingestion and cleaning, KPI design, basic forecasting, and producing actionable recommendations.'
+                      )"
+                    >
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
 
 
 
